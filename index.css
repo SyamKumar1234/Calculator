@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba( 66, 152, 245, .3);
+}
+#container{
+    min-height: 550px;
+    width: 25%;
+    background: #111;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 8px;
+}
+.currentInput{
+    height: 120px;
+    color: white;
+    word-break: break-all;
+    padding-left: 70%;
+    padding-top: 5%;
+    overflow-y: auto;
+     
+    font-size: x-large;
+    margin-bottom: 1%;
+
+ 
+}
+.currentContent{
+    text-align: right;
+    padding-right: 10%;
+   
+}
+.answerScreen{
+    height:30px
+}
+.answerContent{
+    padding-right: 3%;
+    max-height: fit-content;
+    text-align: right;
+    font-size: x-large;
+    word-break: break-all;
+    color: white;
+    /* visibility: hidden; */
+   
+}
+#buttons{
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.5%;
+
+}
+.functionButton{
+    padding: 15px 15px 15px 15px;
+    justify-content: space-between;
+    background: inherit;
+    color: orangered;
+    border: none;
+    font-size: larger;
+    user-select: none;
+}
+.numberButton{
+    padding: 15px 15px 15px 15px;
+    background: inherit;
+    color: #ffff;
+    border: none;
+    font-size: larger;
+    user-select: none;
+}
+.functionButton:hover,.numberButton:hover{
+    background: rgba(29,29,29,.97);
+}
+::-webkit-scrollbar{ display: none;}
