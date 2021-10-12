@@ -4,7 +4,7 @@ body{
     background: rgba( 66, 152, 245, .3);
 }
 #container{
-    min-height: 550px;
+    min-height: 500px;
     width: 25%;
     background: #111;
     margin: auto;
