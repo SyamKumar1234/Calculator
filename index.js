@@ -22,13 +22,7 @@ buttons.forEach((btn)=>{
     btn.addEventListener('click',()=>{
         answerContent.style.visibility='visible'
         answerContent.style.fontSize ='medium';
-        if(!btn.id.match('clear')){
-            if(flag===1) {
-                realtimeScreenArray = ['']
-                answerContent.style.fontSize ='medium';
-                currentContent.style.fontSize ='x-large';
-                flag=0;
-            }            
+        if(!btn.id.match('clear')&& !btn.id.match('back')){       
             currentContent.className='currentContent'
             answerContent.className='answerContent'
             realtimeScreenArray.push(btn.value);
@@ -43,12 +37,17 @@ buttons.forEach((btn)=>{
             answerContent.innerHTML= eval(realtimeScreenArray.join(''))
         }
         if(btn.id.match('evaluate')){
+           
             currentContent.className='answerContent';
             answerContent.className='currentContent';
             answerContent.style.color='white';
             answerContent.style.fontSize ='x-large';
             currentContent.style.fontSize ='medium';
             flag = 1;
+            console.log(answerContent.innerHTML);
+            realtimeScreenArray = []
+            realtimeScreenArray.push(answerContent.innerHTML)
+            console.log(realtimeScreenArray);
         }
         if(typeof eval(realtimeScreenArray.join('')) =='undefined'){
 
