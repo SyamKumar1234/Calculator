@@ -39,27 +39,16 @@ body{
     font-size: x-large;
     word-break: break-all;
     color: white;
-    /* visibility: hidden; */
    
 }
 #buttons{
     max-height: 450px;
     color: white;
-    /* font-size: larger;
-    padding: 15px 15px 15px 15px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
 }
-/* .row{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4.5%;
 
-} */
 .functionButton{
     padding: 15px 15px 15px 15px;
-    justify-content: space-between;
+  
     background: inherit;
     color: orangered;
     border: none;
